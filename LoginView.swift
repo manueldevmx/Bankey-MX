@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class LoginView: UIView, UITextFieldDelegate {
+class LoginView: UIView{
     
     let usernameTextField = UITextField ()
     
@@ -23,7 +23,7 @@ class LoginView: UIView, UITextFieldDelegate {
     }
     
     override var intrinsicContentSize: CGSize {
-        return CGSize(width: 300, height: 200)
+        return CGSize(width: 200, height: 200)
     }
 }
 
@@ -36,7 +36,7 @@ extension LoginView {
         usernameTextField.placeholder = "Username"
         usernameTextField.delegate = self
     }
-    
+
     func layout () {
         addSubview(usernameTextField)
         NSLayoutConstraint.activate([
@@ -46,24 +46,24 @@ extension LoginView {
         ])
         
     }
-    
-    //MARK: UXTextFieldDelegate
-    extension LoginView:  UITextFieldDelegate {
-        
-        func textFieldShouldReturn(_ textField: UITextField ) -> Bool {
-            usernameTextField.endEditing(true)
-            return true
-        }
-        
-        func textFieldEndEditing(_ textField: UITextField) -> Bool {
-            if textField.text != "" {
-                return true
-            } else {
-                return false
-            }
-        }
-            
+}
+
+extension LoginView: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        usernameTextField.endEditing(true)
+        return true
     }
     
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != "" {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField)  {
+    }
 }
+
 
