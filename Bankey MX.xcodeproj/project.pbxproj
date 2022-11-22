@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E484FF65292C2B9200A5AA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484FF64292C2B9200A5AA83 /* AppDelegate.swift */; };
-		E484FF67292C2B9200A5AA83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484FF66292C2B9200A5AA83 /* SceneDelegate.swift */; };
-		E484FF69292C2B9200A5AA83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484FF68292C2B9200A5AA83 /* ViewController.swift */; };
-		E484FF6C292C2B9200A5AA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E484FF6A292C2B9200A5AA83 /* Main.storyboard */; };
+		E484FF69292C2B9200A5AA83 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484FF68292C2B9200A5AA83 /* LoginViewController.swift */; };
 		E484FF6E292C2B9300A5AA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E484FF6D292C2B9300A5AA83 /* Assets.xcassets */; };
 		E484FF71292C2B9300A5AA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E484FF6F292C2B9300A5AA83 /* LaunchScreen.storyboard */; };
 		E484FF7C292C2B9300A5AA83 /* Bankey_MXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484FF7B292C2B9300A5AA83 /* Bankey_MXTests.swift */; };
 		E484FF86292C2B9300A5AA83 /* Bankey_MXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484FF85292C2B9300A5AA83 /* Bankey_MXUITests.swift */; };
 		E484FF88292C2B9300A5AA83 /* Bankey_MXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484FF87292C2B9300A5AA83 /* Bankey_MXUITestsLaunchTests.swift */; };
+		E484FF99292C614700A5AA83 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484FF98292C614700A5AA83 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +37,7 @@
 /* Begin PBXFileReference section */
 		E484FF61292C2B9200A5AA83 /* Bankey MX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bankey MX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E484FF64292C2B9200A5AA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E484FF66292C2B9200A5AA83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E484FF68292C2B9200A5AA83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E484FF6B292C2B9200A5AA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E484FF68292C2B9200A5AA83 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E484FF6D292C2B9300A5AA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E484FF70292C2B9300A5AA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E484FF72292C2B9300A5AA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +46,8 @@
 		E484FF81292C2B9300A5AA83 /* Bankey MXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bankey MXUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E484FF85292C2B9300A5AA83 /* Bankey_MXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bankey_MXUITests.swift; sourceTree = "<group>"; };
 		E484FF87292C2B9300A5AA83 /* Bankey_MXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bankey_MXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E484FF98292C614700A5AA83 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E484FF9A292C749D00A5AA83 /* Bankey MX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bankey MX.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +84,7 @@
 				E484FF62292C2B9200A5AA83 /* Products */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 0;
 		};
 		E484FF62292C2B9200A5AA83 /* Products */ = {
 			isa = PBXGroup;
@@ -99,13 +99,10 @@
 		E484FF63292C2B9200A5AA83 /* Bankey MX */ = {
 			isa = PBXGroup;
 			children = (
+				E484FF9A292C749D00A5AA83 /* Bankey MX.entitlements */,
+				E484FF94292C5F7F00A5AA83 /* Files */,
+				E484FF97292C60E900A5AA83 /* Login */,
 				E484FF64292C2B9200A5AA83 /* AppDelegate.swift */,
-				E484FF66292C2B9200A5AA83 /* SceneDelegate.swift */,
-				E484FF68292C2B9200A5AA83 /* ViewController.swift */,
-				E484FF6A292C2B9200A5AA83 /* Main.storyboard */,
-				E484FF6D292C2B9300A5AA83 /* Assets.xcassets */,
-				E484FF6F292C2B9300A5AA83 /* LaunchScreen.storyboard */,
-				E484FF72292C2B9300A5AA83 /* Info.plist */,
 			);
 			path = "Bankey MX";
 			sourceTree = "<group>";
@@ -125,6 +122,27 @@
 				E484FF87292C2B9300A5AA83 /* Bankey_MXUITestsLaunchTests.swift */,
 			);
 			path = "Bankey MXUITests";
+			sourceTree = "<group>";
+		};
+		E484FF94292C5F7F00A5AA83 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				E484FF72292C2B9300A5AA83 /* Info.plist */,
+				E484FF6D292C2B9300A5AA83 /* Assets.xcassets */,
+				E484FF6F292C2B9300A5AA83 /* LaunchScreen.storyboard */,
+			);
+			name = Files;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E484FF97292C60E900A5AA83 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E484FF68292C2B9200A5AA83 /* LoginViewController.swift */,
+				E484FF98292C614700A5AA83 /* LoginView.swift */,
+			);
+			name = Login;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +208,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = manuelc;
 				TargetAttributes = {
 					E484FF60292C2B9200A5AA83 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -233,7 +253,6 @@
 			files = (
 				E484FF71292C2B9300A5AA83 /* LaunchScreen.storyboard in Resources */,
 				E484FF6E292C2B9300A5AA83 /* Assets.xcassets in Resources */,
-				E484FF6C292C2B9200A5AA83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E484FF69292C2B9200A5AA83 /* ViewController.swift in Sources */,
+				E484FF99292C614700A5AA83 /* LoginView.swift in Sources */,
+				E484FF69292C2B9200A5AA83 /* LoginViewController.swift in Sources */,
 				E484FF65292C2B9200A5AA83 /* AppDelegate.swift in Sources */,
-				E484FF67292C2B9200A5AA83 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +316,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E484FF6A292C2B9200A5AA83 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E484FF6B292C2B9200A5AA83 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E484FF6F292C2B9300A5AA83 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,13 +448,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bankey MX/Bankey MX.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bankey MX/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -451,7 +462,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FinanceApp.Bankey-MX";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.manuelc.Bankey-MX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,13 +475,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bankey MX/Bankey MX.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bankey MX/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,7 +489,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.FinanceApp.Bankey-MX";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.manuelc.Bankey-MX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
